@@ -78,13 +78,19 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               onPressed: () {
                 //forgot password screen
               },
-              child: const Text('Forgot Password',),
+              child: const Text('Forgot Password',
+              style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 20),),
             ),
             Container(
                 height: 50,
                 padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: ElevatedButton(
-                  child: const Text('Login'),
+                  child: const Text('Login',
+                  style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 20),),
                   onPressed: () {
                     print(nameController.text);
                     print(passwordController.text);
@@ -97,7 +103,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 TextButton(
                   child: const Text(
                     'Sign in',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 20),
                   ),
                   onPressed: () {
                     //signup screen
